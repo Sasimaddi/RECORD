@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initialscale=1.0">
+<title>Document</title>
+<style>
+.heading {
+background-color: coral;
+text-align: center;
+}
+.form {
+background-color: white;
+border: .1cm solid black;
+border-style: single;
+margin-right: 40px;
+margin-left: 40px;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 10px;
+align-content: space-between;
+padding-bottom: 10px;
+}
+.button {
+display: block;
+margin: auto;
+}
+</style>
+</head>
+<body>
+<div class="heading">
+<h1>Registration Form</h1>
+</div>
+<div class="form">
+<form>
+<label for="First Name">First Name: </label><br>
+<input type="text" class="firstname" name="firstname"><br>
+<p> </p>
+<label for="lastname">Last Name: </label><br>
+<input type="text" class="lastname" name="classname"><br>
+<p> </p>
+<label for="email">Enter Your Mail: </label><br>
+<input type="email" class="email" name="email"><br>
+<p> </p>
+<label for="section">Choose Your Section: </label><br>
+<input type="radio" name="section" value="A">A<br>
+<input type="radio" name="section" value="B">B<br>
+<input type="radio" name="section" value="C">C<br>
+<input type="radio" name="section" value="D">D<br>
+<input type="radio" name="section" value="E">E<br>
+<p> </p>
+<label for="Sem">Choose Your Semester: </label><br>
+<table>
+<tr>
+<td>
+<select name="Sem" id="Semester">
+<option value="-1">--Select--</option>
+<option value="Sem1">SEM 1</option>
+<option value="Sem2">SEM 2</option>
+<option value="Sem3">SEM 3</option>
+<option value="Sem4">SEM 4</option>
+<option value="Sem5">SEM 5</option>
+<option value="Sem6">SEM 6</option>
+<option value="Sem7">SEM 7</option>
+<option value="Sem8">SEM 8</option>
+</select>
+</td>
+</tr>
+</table>
+<p> </p>
+<label for="courses">Select the Subjects You want: </label><br>
+<input type="checkbox" name="course" value="Awp">Advance Web 
+Programming<br>
+<input type="checkbox" name="course" value="os">Operating 
+System<br>
+<input type="checkbox" name="course" value="flat">Formal Language 
+and Automata Theory<br>
+<input type="checkbox" name="course" value="dwdm">Data Ware 
+House and Data Mining<br>
+<input type="checkbox" name="course" value="dm">Discrete 
+Mathematics<br>
+<input type="checkbox" name="course" value="oof">Optics and Optical 
+Fibres<br>
+<div class="button">
+<button style="display:block;margin:auto"><a 
+href="images/Login.html">Log In</a></button>
+</div>
+</form>
+</div>
+</body>
+</html>

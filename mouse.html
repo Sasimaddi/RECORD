@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Mouse Position</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$(document).mousemove(function(event) {
+				var xPos = event.pageX;
+				var yPos = event.pageY;
+				$("#xPos").text("X Position: " + xPos);
+				$("#yPos").text("Y Position: " + yPos);
+			});
+		});
+	</script>
+	<style>
+		body {
+			height: 2000px;
+		}
+		#pos {
+			position: fixed;
+			top: 0;
+			left: 0;
+			padding: 10px;
+			background-color: #ccc;
+			border: 1px solid #333;
+		}
+	</style>
+</head>
+<body>
+	<h1>jQuery Mouse Position</h1>
+	
+	<div id="pos">
+		<p id="xPos"></p>
+		<p id="yPos"></p>
+	</div>
+</body>
+</html>
